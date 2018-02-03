@@ -1,0 +1,46 @@
+// declaring variables
+
+int value = 10;
+
+// without ;
+
+int value = 10
+
+// just number or operation
+
+10 +10
+
+// editing variables
+
+/edit value
+
+// changing editor
+
+/set editor vim
+
+// droping variable
+
+/drop value
+
+// usign api
+
+Math.random()
+
+// declaring command blocks
+
+if(value%2==0) 
+   System.out.println("even");
+else 
+   System.out.println("odd");
+
+// declaring method
+
+boolean isEven(int number) {
+   return number%2==0;
+}
+
+// imports
+
+import java.util.stream.*
+
+Stream.of(1,2,3,4).map(i -> i + " is even: " + isEven(i)).forEach(System.out::println)
