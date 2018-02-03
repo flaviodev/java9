@@ -1,0 +1,24 @@
+// creating method of avarage
+
+public double averageLenght(List<String> words) {
+   return words.stream()
+      .mapToInt(String::length).average()
+      .orElse(0);
+}
+
+
+// new feature .of
+
+List<String> words = List.of("we", "can", "create", "lists","this","way");
+
+averageLenght(words);
+
+
+// saving method
+
+/save average-lenght
+
+
+//load saved method
+
+$ jshell average-lenght 
