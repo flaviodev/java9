@@ -1,0 +1,12 @@
+-> jigsaw = modules
+
+-> Console JShell
+
+-> html5 javadoc (with search option)
+
+-> stream and collections improvements
+   - method of on stream
+
+-> Reactive programming 
+
+
