@@ -1,0 +1,10 @@
+// api changes
+
+// unmodifiable collections by simple method .of
+
+List.of("unmodifiable", "list", "example", "java9")
+
+Map.of(1, "super", 2, "cool", 3, "way", 4, "to", 5, "create", 6, "a", 7, "map")
+
+jshell> /open api-changes.jshell
+

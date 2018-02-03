@@ -1,0 +1,3 @@
+List.of("unmodifiable", "list", "example", "java9").stream().map(s -> s.length()).forEach(System.out::println)
+
+Map.of(1, "super", 2, "cool", 3, "way", 4, "to", 5, "create", 6, "a", 7, "map").forEach((k,v) -> System.out.println(v))

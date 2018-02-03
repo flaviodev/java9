@@ -1,15 +1,5 @@
-// now we have incubator modules
-
-jshell --add-modules jdk.incubator.httpclient
-
-// stakwalking
-
 import java.util.stream.Collectors;
 
 StackWalker.getInstance().walk(stream -> 
   stream.map(frame -> frame.getClassName()).collect(Collectors.toList())
 ).forEach(System.out::println);
-
- /open stackwalking.jshell
-
-
