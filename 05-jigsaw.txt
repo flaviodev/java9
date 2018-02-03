@@ -1,0 +1,36 @@
+// migrating project to java 9
+
+// creating module using the name of the base package (like maven groupId)
+
+mkdir src/br.com.flaviodev.jigsaw
+
+// move project to module folder
+
+mv src/br src/br.com.flaviodev.jigsaw
+
+// changes on compile command
+
+javac -d <1> <2> <3>
+
+where <1> target folder, <2> path of module-info.java, and <3> complete path of .java file.
+
+// creating package for compiling
+mkdir src/mods
+
+mkdir src/mods/br.com.flaviodev.jigsaw
+
+javac -d mods/br.com.flaviodev.jigsaw 
+    src/br.com.flaviodev.jigsaw/module-info.java
+    src/br.com.flaviodev.jigsaw/br/com/flaviodev/jigsaw/JigSaw.java 
+
+javac -d mods/br.com.flaviodev.jigsaw src/br.com.flaviodev.jigsaw/module-info.java src/br.com.flaviodev.jigsaw/br/com/flaviodev/jigsaw/JigSaw.java 
+
+// running
+
+java –module-path <1> -m <2>
+where <1> é module .class folder (/mods), and <2> class name (full qualified name with module name)
+
+java --module-path mods/ -m br.com.flaviodev.jigsaw/br.com.flaviodev.jigsaw.JigSaw
+
+
+
