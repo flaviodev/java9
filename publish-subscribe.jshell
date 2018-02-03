@@ -1,0 +1,6 @@
+SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+
+publisher.consume(System.out::println);
+
+List.of("this", "is", "an", "assynchronous", "code").forEach(publisher::submit);
+

@@ -1,0 +1,15 @@
+// Publisher - Subscriber
+
+main classes
+
+java.util.concurrent.Flow
+java.util.concurrent.Flow.Publisher
+java.util.concurrent.Flow.Subscriber
+java.util.concurrent.Flow.Processor
+
+
+// The main problem that the feature intends to solve
+
+overload problem in assynchronous processing where the receiver is not prepared to handle the size of the response
+
+
