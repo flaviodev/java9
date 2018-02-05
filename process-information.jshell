@@ -1,0 +1,16 @@
+import java.util.stream.*;
+import java.time.*;
+
+ProcessHandle self = ProcessHandle.current();
+long PID = self.pid​();
+ProcessHandle.Info procInfo = self.info();
+  
+Optional<String[]> args = procInfo.arguments();
+Optional<String> cmd =  procInfo.commandLine();
+Optional<Instant> startTime = procInfo.startInstant();
+Optional<Duration> cpuUsage = procInfo.totalCpuDuration();
+
+
+System.out.println(cmd.get());
+System.out.println(startTime.get());
+System.out.println(cpuUsage.get());
